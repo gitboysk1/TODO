@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>Today</h1>
+            <form action="" id="todo-form">
+                <input type="text" name="task-name" placeholder="e.g. Buy groceries" autofocus>
+                <button type="submit">ADD TASK</button>
+
+            </form>
+        </div>
+    </header>
+    <section>
+        <div class="container" id="main-content">
+            <ul class="stats">
+                <li>
+                    <span>Remaining</span>
+                    <span id="remaining-task">0</span>
+                </li>
+                <li class="">
+                    <span>Completed</span>
+                    <span id="completed-task">0</span>
+                </li>
+                <li>
+                    <span>Total</span>
+                    <span id="total-task">0</span>
+                </li>
+            </ul>
+               
+            <ul class="todos">
+                <li>
+                    <div>
+                        <input type="checkbox" name="tasks" id="1">
+                        <span contenteditable>Task 1</span>
+                        <button title="Remove task" class="remove-task"><img src="/icons8-delete.svg" alt="Remove"></button>
+                    </div>
+                </li>
+                <li class="complete">
+                    <div>
+                        <input type="checkbox" name="tasks" id="1">
+                        <span>Task 2</span>
+                        <button title="Remove task" class="remove-task"><img src="/icons8-delete.svg" alt="Remove"></button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" name="tasks" id="1">
+                        <span>Task 3</span>
+                        <button title="Remove task" class="remove-task"><img src="/icons8-delete.svg" alt="Remove"></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="container">
+        <p>
+            <small>
+                Design By <a href="https://surajKumar.com/"
+                target="_blank" >Suraj Kumar</a>
+            </small>
+        </p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
